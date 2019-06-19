@@ -189,7 +189,7 @@ public class VIPlayer: NSObject {
             }
         } else if keyPath == #keyPath(AVPlayer.currentItem.playbackBufferEmpty) {
             if let playerItem = player.currentItem {
-                delegate?.player(self, isPlaybackBufferFull: playerItem.isPlaybackBufferEmpty)
+                delegate?.player(self, isPlaybackBufferEmpty: playerItem.isPlaybackBufferEmpty)
             }
         } else if keyPath == #keyPath(AVPlayer.currentItem.status) {
             if let playerItem = player.currentItem {
